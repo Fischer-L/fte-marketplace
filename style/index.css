@@ -1,0 +1,93 @@
+#tutorialContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3.8rem;
+  font-style: italic;
+  background-image: url("images/tutorial_background.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+
+#tutorialContainer.finish {
+  opacity: 0;
+  visibility: hidden;
+}
+
+smart-button[type=rounded-corner-text] {
+  width: 30.4rem;
+  font-size: 4.5rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.slide.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
+}
+
+.slide-section {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0px);
+}
+
+.slide-section.top {
+  height: 8rem;
+  line-height: 8rem;
+  top: 3.5rem;
+}
+
+.slide-section.mid {
+  top: 14rem;
+}
+
+.slide-section.bottom {
+  bottom: 5.5rem;
+}
+
+.slide-description {
+  height: 8rem;
+  line-height: 8rem;
+  margin: 0;
+  display: inline-block;
+}
+
+.slide-description.circled {
+  font-size: 4.5rem;
+  text-align: center;
+  background: #000;
+  border-radius: 4rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.slide-description.circled.ok-key {
+  width: 8rem;
+}
+
+.slide-description.circled.option-key {
+  width: 22rem;
+}
+
+.slide-description.circled.apps-key {
+  width: 16rem;
+}
+
+.slide-tutorialImg {
+  width: 150rem;
+  height: 84.5rem;
+}

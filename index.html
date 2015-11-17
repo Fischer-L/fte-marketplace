@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Marketplace Tutorial</title>
+
+    <!-- stylesheets of building blocks -->
+    <link rel="stylesheet" type="text/css" href="bower_components/smart-button/style.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+
+    <!-- shared libraries -->
+    <script defer src="bower_components/evt/index.js"></script>
+    <script defer src="bower_components/smart-button/script.js"></script>
+
+    <!-- For test purpose on phone only -->
+    <script defer src="js/gaia_shared/js/gesture_detector.js"></script>
+    <script defer src="js/gaia_shared/js/smart-screen/init_gesture.js"></script>
+
+    <!-- Helper libraries -->
+    <script defer src="js/gaia_shared/smart-screen/simple_key_navigation.js"></script>
+    <script defer src="js/gaia_shared/smart-screen/key_navigation_adapter.js"></script>
+    <script defer src="js/gaia_shared/smart-screen/f_t_e_wizard.js"></script>
+
+    <!-- main javascript code -->
+    <script defer src="js/index.js"></script>
+
+    <!-- Shared L10n libraries -->
+    <script defer src="js/gaia_shared/l10n.js"></script>
+
+    <!-- L10n properties -->
+    <meta name="defaultLanguage" content="en-US">
+    <meta name="availableLanguages" content="en-US">
+    <link rel="localization" href="locales/marketplace-tutorial.{locale}.properties"/>
+
+    <style type="text/css">
+      html {
+        font-size: 10px;
+        /* We have Fira Sans as default font in real device. But it isn't default in
+         * browser. That's the main reason this line is here.*/
+        font-family: "Fira Sans";
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="tutorialContainer">
+
+      <div id="slide-1" class="slide">
+        <div class="slide-section top">
+          <span class="slide-description" data-l10n-id="press"></span>
+          <span class="slide-description circled ok-key" data-l10n-id="ok"></span>
+          <span class="slide-description" data-l10n-id="key-to-open-and-use-an-app"></span>
+        </div>
+        <div class="slide-section mid">
+          <img class="slide-tutorialImg" src="style/images/tutorial_slide_1.png">
+        </div>
+        <div class="slide-section bottom">
+          <smart-button data-behavior="next" class="slide-button primary" type="rounded-corner-text" data-l10n-id="next"></smart-button>
+        </div>
+      </div>
+
+      <div id="slide-2" class="slide hidden">
+        <div class="slide-section top">
+          <span class="slide-description" data-l10n-id="press"></span>
+          <span class="slide-description circled option-key" data-l10n-id="option"></span>
+          <span class="slide-description" data-l10n-id="to-add-an-app-to-the-apps-folder"></span>
+        </div>
+        <div class="slide-section mid">
+          <img class="slide-tutorialImg" src="style/images/tutorial_slide_2.png">
+        </div>
+        <div class="slide-section bottom">
+          <smart-button data-behavior="prev" class="slide-button" type="rounded-corner-text" data-l10n-id="back"></smart-button>
+          <smart-button data-behavior="next" class="slide-button primary" type="rounded-corner-text" data-l10n-id="next"></smart-button>
+        </div>
+      </div>
+
+      <div id="slide-3" class="slide hidden">
+        <div class="slide-section top">
+          <span class="slide-description" data-l10n-id="press"></span>
+          <span class="slide-description circled apps-key" data-l10n-id="apps"></span>
+          <span class="slide-description" data-l10n-id="to-see-apps-added-to-the-apps-folder"></span>
+        </div>
+        <div class="slide-section mid">
+          <img class="slide-tutorialImg" src="style/images/tutorial_slide_3.png">
+        </div>
+        <div class="slide-section bottom">
+          <smart-button data-behavior="prev" class="slide-button" type="rounded-corner-text" data-l10n-id="back"></smart-button>
+          <smart-button data-behavior="finish" class="slide-button primary" type="rounded-corner-text" data-l10n-id="done"></smart-button>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
